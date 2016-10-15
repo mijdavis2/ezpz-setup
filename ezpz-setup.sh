@@ -157,5 +157,5 @@ then
 fi
 
 # Install and cache requirements file so we only run pip install if it's changed
-${USE_PIP} install -r ${REQ_FILE} && \cp ${REQ_FILE} ${THIS_DIR}/env/requirements.txt
+${THIS_DIR}/env/bin/pip install -r ${REQ_FILE} && \cp ${REQ_FILE} ${THIS_DIR}/env/requirements.txt
 return 0
