@@ -23,5 +23,5 @@ Abstracted &amp; remotely available python project setup scripts
 What are you making?
 
 1. Generic python project: [generator-pyboot](https://github.com/mijdavis2/generator-pyboot)
-2. Pypi package: [generator-pypi](https://github.com/mijdavis2/generator-pypi-master)
+2. Pypi package: [generator-pypi-master](https://github.com/mijdavis2/generator-pypi-master)
 3. Python webapp with Weppy: [generator-weppy-mvc](https://github.com/mijdavis2/generator-weppy-mvc)
