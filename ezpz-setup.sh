@@ -69,9 +69,11 @@ fi
 # ------------------------------------------------------------------
 #  CHECK/UPDATE .GITIGNORE
 # ------------------------------------------------------------------
-file=${THIS_DIR}/.gitignore
-if [ ! grep -Fxq "env/" ${file} ]
+file="${THIS_DIR}/.gitignore"
+if grep -Fxq "env/" ${file}
 then
+    echo ".gitignore looks good"
+else
     echo "env/" >> ${file}
 fi
 
