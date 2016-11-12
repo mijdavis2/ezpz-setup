@@ -8,16 +8,18 @@ Abstracted &amp; remotely available python project setup scripts
 
 ## Why
 - Use lots of different computers/vms/cronjobs/automation etc? This saves tons of setup time.
-- Project level `env` dir is much more accessible than `$HOME/.virtualenvs/.../` which how virtualenvwrapper and virtualenvburrito handle virtualenv.
+- Project level `env` dir is much more accessible than `$HOME/.virtualenvs/.../` (which how virtualenvwrapper and virtualenvburrito handle virtualenv).
 
 ## Usage
 
 **Manual**
+
 1. Copy `setup.sh` ([raw](https://raw.githubusercontent.com/mijdavis2/ezpz-setup/master/setup.sh)) into the parent dir of your python package
 2. Update `PYTHON_VERSION` in in `setup.sh` to your project's minimum python version
 3. Run `source setup.sh`
 
 **Automated**
+
 What are you making?
 1. Generic python project: [generator-pyboot](https://github.com/mijdavis2/generator-pyboot)
 2. Pypi package: [generator-pypi](https://github.com/mijdavis2/generator-pypi-master)
