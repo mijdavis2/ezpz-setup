@@ -5,7 +5,7 @@
 #          No hassle setup to isntall virtualenv & dependencies
 # -------------------------------------------------------------------
 
-VERSION=0.1.0
+VERSION=0.1.1
 USAGE='Usage: source ezpz-setup.sh -hv -p "/path/to/python/" -r "required.python.version" -q "/path/to/requirements.txt"'
 
 {
@@ -60,6 +60,11 @@ then
 fi
 
 THIS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+PARENT_DIR="$(dirname "$(pwd)")"
+if [ -d ${PARENT_DIR}/env ]
+then
+    THIS_DIR=${PARENT_DIR}
+fi
 
 
 # ------------------------------------------------------------------
