@@ -66,6 +66,16 @@ then
     THIS_DIR=${PARENT_DIR}
 fi
 
+# ------------------------------------------------------------------
+#  CHECK/UPDATE .GITIGNORE
+# ------------------------------------------------------------------
+file=${THIS_DIR}/.gitignore
+( [ -e "$file" ] || touch "$file" ) && [ ! -w "$file" ] && echo cannot write to ${file} && exit 1
+
+if [ ! grep -Fxq "env/" ${THIS_DIR}/.gitignore ]
+then
+    echo "env/" >> ${file}
+fi
 
 # ------------------------------------------------------------------
 #  CHECK PYTHON VERSION
