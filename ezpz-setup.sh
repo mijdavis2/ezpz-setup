@@ -60,7 +60,7 @@ then
 fi
 
 THIS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-PARENT_DIR="$(dirname "$(pwd)")"
+PARENT_DIR="$(dirname "${THIS_DIR}")"
 if [ -d ${PARENT_DIR}/env ]
 then
     THIS_DIR=${PARENT_DIR}
