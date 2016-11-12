@@ -8,7 +8,7 @@ Abstracted &amp; remotely available python project setup scripts
 
 ## Why
 - Use lots of different computers/vms/cronjobs/automation etc? This saves tons of setup time.
-- Project level `env` dir is much more accessible than `$HOME/.virtualenvs/.../` which how WORKON and virtualenvburrito handle virtualenv.
+- Project level `env` dir is much more accessible than `$HOME/.virtualenvs/.../` which how virtualenvwrapper and virtualenvburrito handle virtualenv.
 
 ## Usage
 1. Copy `setup.sh` into the parent dir of your python package
