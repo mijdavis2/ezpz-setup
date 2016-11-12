@@ -70,9 +70,7 @@ fi
 #  CHECK/UPDATE .GITIGNORE
 # ------------------------------------------------------------------
 file=${THIS_DIR}/.gitignore
-( [ -e "$file" ] || touch "$file" ) && [ ! -w "$file" ] && echo cannot write to ${file} && exit 1
-
-if [ ! grep -Fxq "env/" ${THIS_DIR}/.gitignore ]
+if [ ! grep -Fxq "env/" ${file} ]
 then
     echo "env/" >> ${file}
 fi
